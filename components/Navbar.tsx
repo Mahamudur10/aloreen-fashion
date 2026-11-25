@@ -3,14 +3,6 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      {/* টপ বার */}
-      <div className="bg-pink-900 text-white text-xs py-2 px-4 flex justify-between items-center">
-        <p>🚚 Free Delivery All Over Bangladesh | Cash on Delivery Available</p>
-        <div className="hidden md:flex gap-3">
-          <span>f</span> <span>📷</span> <span>▶</span>
-        </div>
-      </div>
-
       {/* মেইন নেভবার */}
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-pink-800 flex items-center gap-2">
