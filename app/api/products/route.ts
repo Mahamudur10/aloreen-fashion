@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/mongodb";
 import Product from "@/models/Product";
 
-// GET: সব প্রোডাক্ট আনা
+// GET: সব প্রোডাক্ট আনা (ব্রাউজারে দেখার জন্য)
 export async function GET() {
   try {
     await dbConnect();
@@ -13,7 +13,7 @@ export async function GET() {
   }
 }
 
-// POST: নতুন প্রোডাক্ট তৈরি করা (পরে অ্যাডমিন ফর্ম থেকে কল করব)
+// POST: নতুন প্রোডাক্ট তৈরি করা (ফর্ম থেকে সেভ করার জন্য)
 export async function POST(request: Request) {
   try {
     await dbConnect();

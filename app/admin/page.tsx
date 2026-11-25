@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AdminDashboard() {
   const stats = [
     { title: "Total Products", value: "1,248", change: "+4.2%", isUp: true },
@@ -33,7 +35,12 @@ export default function AdminDashboard() {
         </div>
         <div className="flex gap-3">
           <button className="border border-gray-300 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-50">Export</button>
-          <button className="bg-pink-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink-800">+ Add product</button>
+          
+          {/* এখানে বাটনটিকে Link দিয়ে ঠিক করা হয়েছে */}
+          <Link href="/admin/products/add" className="bg-pink-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink-800">
+            + Add product
+          </Link>
+          
         </div>
       </div>
 
